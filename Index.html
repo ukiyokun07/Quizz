@@ -190,438 +190,373 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <div class="quiz-box">
-            <h1>Advanced Social Role Assessment</h1>
-            <div class="progress-container">
-                <div class="progress-bar">
-                    <div class="progress" id="progress"></div>
-                </div>
-            </div>
-
-            <!-- Questions -->
-            <div class="question active" id="q1">
-                <h3>1. When someone criticizes your favorite activity, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 1)">Organize a campaign against critics</button>
-                    <button class="option" onclick="nextQuestion('B', 1)">Publicly shame the critics</button>
-                    <button class="option" onclick="nextQuestion('C', 1)">Ignore and avoid discussion</button>
-                    <button class="option" onclick="nextQuestion('D', 1)">Politely defend your preference</button>
-                    <button class="option" onclick="nextQuestion('E', 1)">Find common ground through dialogue</button>
-                </div>
-            </div>
-
-            <!-- Add remaining questions here -->
-			
-			<div class="question" id="q2">
-                <h3>2. When a colleague dislikes your idea, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 2)">Sabotage their projects in retaliation</button>
-                    <button class="option" onclick="nextQuestion('B', 2)">Spread rumors about their incompetence</button>
-                    <button class="option" onclick="nextQuestion('C', 2)">Avoid sharing ideas in the future</button>
-                    <button class="option" onclick="nextQuestion('D', 2)">Try to understand their perspective</button>
-                    <button class="option" onclick="nextQuestion('E', 2)">Collaborate to improve the idea</button>
-                </div>
-            </div>
-
-            <div class="question" id="q3">
-                <h3>3. When someone hates a cause you support, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 3)">Attack their character personally</button>
-                    <button class="option" onclick="nextQuestion('B', 3)">Mock their intelligence</button>
-                    <button class="option" onclick="nextQuestion('C', 3)">Avoid discussing the topic</button>
-                    <button class="option" onclick="nextQuestion('D', 3)">Share facts about the cause</button>
-                    <button class="option" onclick="nextQuestion('E', 3)">Engage in respectful debate</button>
-                </div>
-            </div>
-
-            <div class="question" id="q4">
-                <h3>4. When a friend dislikes your lifestyle choices, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 4)">Cut them out of your life completely</button>
-                    <button class="option" onclick="nextQuestion('B', 4)">Publicly criticize their choices</button>
-                    <button class="option" onclick="nextQuestion('C', 4)">Stop sharing your experiences</button>
-                    <button class="option" onclick="nextQuestion('D', 4)">Explain why you make these choices</button>
-                    <button class="option" onclick="nextQuestion('E', 4)">Find activities you both enjoy</button>
-                </div>
-            </div>
-
-            <div class="question" id="q5">
-    <h3>5. When you see a friend struggling with learning a new skill, you:</h3>
-    <div class="options">
-        <button class="option" onclick="nextQuestion('A', 5)">Organize a 'Skill Share Session' where you both teach each other</button>
-        <button class="option" onclick="nextQuestion('B', 5)">Share a 'Learning Journey' video of your own experience</button>
-        <button class="option" onclick="nextQuestion('C', 5)">Offer to practice together regularly</button>
-        <button class="option" onclick="nextQuestion('D', 5)">Discuss effective learning strategies over coffee</button>
-        <button class="option" onclick="nextQuestion('E', 5)">Plan a 'Skill Workshop Day' with local experts</button>
-    </div>
-</div>
-
-            <div class="question" id="q6">
-                <h3>6. When someone dislikes your favorite music, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 6)">Force them to listen to it repeatedly</button>
-                    <button class="option" onclick="nextQuestion('B', 6)">Mock their musical taste</button>
-                    <button class="option" onclick="nextQuestion('C', 6)">Stop sharing your music</button>
-                    <button class="option" onclick="nextQuestion('D', 6)">Explain why you like it</button>
-                    <button class="option" onclick="nextQuestion('E', 6)">Find music you both enjoy</button>
-                </div>
-            </div>
-
-            <div class="question" id="q7">
-                <h3>7. When someone criticizes your work, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 7)">Undermine their work in return</button>
-                    <button class="option" onclick="nextQuestion('B', 7)">Publicly shame their mistakes</button>
-                    <button class="option" onclick="nextQuestion('C', 7)">Stop sharing your work</button>
-                    <button class="option" onclick="nextQuestion('D', 7)">Ask for specific feedback</button>
-                    <button class="option" onclick="nextQuestion('E', 7)">Collaborate to improve together</button>
-                </div>
-            </div>
-
-            <div class="question" id="q8">
-                <h3>8. When someone dislikes your fashion style, you:</h3>
-                <div class="options">
-                    <button class="option" onclick="nextQuestion('A', 8)">Publicly criticize their style</button>
-                    <button class="option" onclick="nextQuestion('B', 8)">Force them to dress like you</button>
-                    <button class="option" onclick="nextQuestion('C', 8)">Stop expressing your style</button>
-                    <button class="option" onclick="nextQuestion('D', 8)">Explain your fashion choices</button>
-                    <button class="option" onclick="nextQuestion('E', 8)">Find common style elements</button>
-                </div>
-            </div>
-			
-			<div class="question" id="q9">
-    <h3>9. When you see a debate on social media, you:</h3>
-    <div class="options">
-        <button class="option" onclick="nextQuestion('A', 9)">Join in aggressively to prove a point</button>
-        <button class="option" onclick="nextQuestion('B', 9)">Scroll past without engaging</button>
-        <button class="option" onclick="nextQuestion('C', 9)">Offer a neutral comment to balance the discussion</button>
-        <button class="option" onclick="nextQuestion('D', 9)">Share facts to educate others</button>
-        <button class="option" onclick="nextQuestion('E', 9)">Encourage both sides to find common ground</button>
-        <button class="option" onclick="nextQuestion('F', 9)">Like posts from both sides to show support</button>
-    </div>
-</div>
-
-            <!-- Results Section -->
-            <div class="result" id="result">
-                <div class="role-title" id="roleTitle"></div>
-                <div class="emotion-score" id="emotionScore"></div>
-                <div class="score-grid" id="scoreBreakdown"></div>
-                <button class="retry-btn" onclick="location.reload()">Retake Quiz</button>
+<div class="container">
+    <div class="quiz-box">
+        <h1>Social Interaction Style Assessment</h1>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
             </div>
         </div>
+
+        <!-- Questions -->
+        <div class="question active" id="q1">
+            <h3>1. When someone expresses their favorite activity, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 1)">Mock their choice publicly</button>
+                <button class="option" onclick="nextQuestion('B', 1)">Secretly undermine their enjoyment</button>
+                <button class="option" onclick="nextQuestion('C', 1)">Politely listen but don't engage</button>
+                <button class="option" onclick="nextQuestion('D', 1)">Ask thoughtful questions about it</button>
+                <button class="option" onclick="nextQuestion('E', 1)">Share similar interests you have</button>
+                <button class="option" onclick="nextQuestion('F', 1)">Plan a joint activity around it</button>
+            </div>
+        </div>
+
+        <div class="question" id="q2">
+            <h3>2. When a colleague shares an idea they're passionate about, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 2)">Find flaws in their concept immediately</button>
+                <button class="option" onclick="nextQuestion('B', 2)">Passively resist implementation</button>
+                <button class="option" onclick="nextQuestion('C', 2)">Remain neutral without commitment</button>
+                <button class="option" onclick="nextQuestion('D', 2)">Offer constructive feedback</button>
+                <button class="option" onclick="nextQuestion('E', 2)">Suggest collaborative improvements</button>
+                <button class="option" onclick="nextQuestion('F', 2)">Volunteer to help develop it</button>
+            </div>
+        </div>
+
+        <div class="question" id="q3">
+            <h3>3. When someone passionately supports a cause, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 3)">Attack their position aggressively</button>
+                <button class="option" onclick="nextQuestion('B', 3)">Subtly discourage their involvement</button>
+                <button class="option" onclick="nextQuestion('C', 3)">Avoid discussing the topic</button>
+                <button class="option" onclick="nextQuestion('D', 3)">Research facts about the cause</button>
+                <button class="option" onclick="nextQuestion('E', 3)">Share related information</button>
+                <button class="option" onclick="nextQuestion('F', 3)">Join their advocacy efforts</button>
+            </div>
+        </div>
+
+        <div class="question" id="q4">
+            <h3>4. When a friend shares lifestyle choices different from yours, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 4)">Publicly ridicule their choices</button>
+                <button class="option" onclick="nextQuestion('B', 4)">Make backhanded compliments</button>
+                <button class="option" onclick="nextQuestion('C', 4)">Change the subject quickly</button>
+                <button class="option" onclick="nextQuestion('D', 4)">Respectfully acknowledge differences</button>
+                <button class="option" onclick="nextQuestion('E', 4)">Find common values behind choices</button>
+                <button class="option" onclick="nextQuestion('F', 4)">Experiment with their suggestions</button>
+            </div>
+        </div>
+
+        <div class="question" id="q5">
+            <h3>5. When someone struggles with learning, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 5)">Point out their failures</button>
+                <button class="option" onclick="nextQuestion('B', 5)">Avoid offering help</button>
+                <button class="option" onclick="nextQuestion('C', 5)">Offer generic encouragement</button>
+                <button class="option" onclick="nextQuestion('D', 5)">Share learning resources</button>
+                <button class="option" onclick="nextQuestion('E', 5)">Schedule practice sessions</button>
+                <button class="option" onclick="nextQuestion('F', 5)">Create a personalized learning plan</button>
+            </div>
+        </div>
+
+        <div class="question" id="q6">
+            <h3>6. When someone shares music they love, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 6)">Mock their taste openly</button>
+                <button class="option" onclick="nextQuestion('B', 6)">Pretend to like it while criticizing</button>
+                <button class="option" onclick="nextQuestion('C', 6)">Nod along without comment</button>
+                <button class="option" onclick="nextQuestion('D', 6)">Ask about their connection to it</button>
+                <button class="option" onclick="nextQuestion('E', 6)">Share similar artists you enjoy</button>
+                <button class="option" onclick="nextQuestion('F', 6)">Create a collaborative playlist</button>
+            </div>
+        </div>
+
+        <div class="question" id="q7">
+            <h3>7. When someone shares their creative work, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 7)">Focus only on flaws</button>
+                <button class="option" onclick="nextQuestion('B', 7)">Give insincere praise</button>
+                <button class="option" onclick="nextQuestion('C', 7)">Offer vague compliments</button>
+                <button class="option" onclick="nextQuestion('D', 7)">Highlight specific strengths</button>
+                <button class="option" onclick="nextQuestion('E', 7)">Suggest constructive improvements</button>
+                <button class="option" onclick="nextQuestion('F', 7)">Offer to collaborate on next steps</button>
+            </div>
+        </div>
+
+        <div class="question" id="q8">
+            <h3>8. When someone expresses unique fashion choices, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 8)">Make derogatory comments</button>
+                <button class="option" onclick="nextQuestion('B', 8)">Backhandedly compare styles</button>
+                <button class="option" onclick="nextQuestion('C', 8)">Avoid commenting</button>
+                <button class="option" onclick="nextQuestion('D', 8)">Compliment their confidence</button>
+                <button class="option" onclick="nextQuestion('E', 8)">Discuss fashion influences</button>
+                <button class="option" onclick="nextQuestion('F', 8)">Suggest a style swap day</button>
+            </div>
+        </div>
+
+        <div class="question" id="q9">
+            <h3>9. When someone shares strong opinions online, you:</h3>
+            <div class="options">
+                <button class="option" onclick="nextQuestion('A', 9)">Troll their perspective</button>
+                <button class="option" onclick="nextQuestion('B', 9)">Subtly discourage participation</button>
+                <button class="option" onclick="nextQuestion('C', 9)">Observe without engaging</button>
+                <button class="option" onclick="nextQuestion('D', 9)">Ask clarifying questions</button>
+                <button class="option" onclick="nextQuestion('E', 9)">Share balanced perspectives</button>
+                <button class="option" onclick="nextQuestion('F', 9)">Facilitate constructive dialogue</button>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="result" id="result">
+            <div class="role-title" id="roleTitle"></div>
+            <div class="emotion-score" id="emotionScore"></div>
+            <div class="score-grid" id="scoreBreakdown"></div>
+            <button class="retry-btn" onclick="location.reload()">Retake Quiz</button>
+        </div>
     </div>
+</div>
 
-  
+  <script>
 
-    <script>
-        const MAX_QUESTIONS = 9;
-        let scores = {
-            CausingHate: 0,
-            AvoidingHate: 0,
-            PreventingHate: 0,
-            PreventingLikes: 0,
-            AllowingLikes: 0,
-            ParticipatingLikes: 0,
-            NeutralBehavior: 0
-        };
+const MAX_QUESTIONS = 9;
+let scores = {
+    CausingHate: 0,
+    AvoidingHate: 0,
+    PreventingHate: 0,
+    PreventingLikes: 0,
+    AllowingLikes: 0,
+    ParticipatingLikes: 0
+};
 
-        const roleMatrix = {
-            CausingHate: {
-                PreventingLikes: ['Malicious Antagonist', '98% Sadness'],
-                AllowingLikes: ['Hater Adversary', '82% Sadness'],
-                ParticipatingLikes: ['Toxic Influencer', '65% Sadness'],
-                NeutralBehavior: ['Manipulative Opportunist', '75% Indifference'],
-                AvoidingHate: ['Aggressive Critic', '85% Frustration'],
-                PreventingHate: ['Contradictory Activist', '60% Conflicted']
-            },
-            AvoidingHate: {
-                PreventingLikes: ['Jealous Obstacle', '45% Sadness'],
-                AllowingLikes: ['Passive Stranger', 'N/A'],
-                ParticipatingLikes: ['Ideal Collaborator', '30% Happiness'],
-                NeutralBehavior: ['Neutral Bystander', '50% Neutral'],
-                CausingHate: ['Reluctant Critic', '25% Guilt'],
-                PreventingHate: ['Quiet Supporter', '40% Contentment']
-            },
-            PreventingHate: {
-                PreventingLikes: ['Supportive Ally', '60% Happiness'],
-                AllowingLikes: ['Protective Guardian', '85% Happiness'],
-                ParticipatingLikes: ['Advocate Champion', '99% Happiness'],
-                NeutralBehavior: ['Balanced Mediator', '50% Neutral'],
-                CausingHate: ['Reformed Critic', '30% Redemption'],
-                AvoidingHate: ['Empathetic Listener', '70% Empathy']
-            },
-            PreventingLikes: {
-                CausingHate: ['Cynical Critic', '80% Disdain'],
-                AvoidingHate: ['Skeptical Observer', '60% Doubt'],
-                PreventingHate: ['Pragmatic Peacemaker', '75% Calm'],
-                NeutralBehavior: ['Detached Analyst', '55% Uninvolved'],
-                AllowingLikes: ['Selective Supporter', '40% Reserved'],
-                ParticipatingLikes: ['Guarded Participant', '35% Cautious']
-            },
-            AllowingLikes: {
-                CausingHate: ['Indifferent Instigator', '70% Apathy'],
-                AvoidingHate: ['Casual Bystander', '50% Indifferent'],
-                PreventingHate: ['Encouraging Friend', '65% Supportive'],
-                NeutralBehavior: ['Open-Minded Individual', '55% Open'],
-                PreventingLikes: ['Fair Mediator', '45% Balanced'],
-                ParticipatingLikes: ['Engaged Supporter', '80% Engaged']
-            },
-            ParticipatingLikes: {
-                CausingHate: ['Passionate Provocateur', '75% Passionate'],
-                AvoidingHate: ['Enthusiastic Ally', '65% Enthusiasm'],
-                PreventingHate: ['Community Builder', '90% Community Spirit'],
-                NeutralBehavior: ['Active Participant', '60% Active'],
-                PreventingLikes: ['Inclusive Advocate', '85% Inclusive'],
-                AllowingLikes: ['Dynamic Influencer', '95% Dynamic']
-            },
-            NeutralBehavior: {
-                CausingHate: ['Neutral Critic', '55% Neutral'],
-                AvoidingHate: ['Uninvolved Observer', '50% Unconcerned'],
-                PreventingHate: ['Peaceful Mediator', '60% Peaceful'],
-                PreventingLikes: ['Balanced Analyst', '55% Analytical'],
-                AllowingLikes: ['Fair-Minded Friend', '65% Fair'],
-                ParticipatingLikes: ['Moderate Participant', '70% Moderate']
-            }
-        };
-
-        const answerImpacts = {
-            1: {
-                A: { CausingHate: 3, PreventingLikes: 1, NeutralBehavior: 1 },
-                B: { CausingHate: 2, PreventingLikes: 2 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 2, ParticipatingLikes: 1 },
-                E: { PreventingHate: 1, ParticipatingLikes: 3 },
-                F: { NeutralBehavior: 3 }
-            },
-            2: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-            3: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-                        4: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-                    5: {
-            A: { PreventingHate: 2, ParticipatingLikes: 2 },
-            B: { PreventingHate: 1, ParticipatingLikes: 2 },
-            C: { PreventingHate: 3, ParticipatingLikes: 1 },
-            D: { PreventingHate: 2, ParticipatingLikes: 1 },
-            E: { PreventingHate: 1, ParticipatingLikes: 3 }
+// Enhanced Role Configuration
+const roleSystem = {
+    roles: {
+        'The Malicious Antagonist': {
+            weights: { CausingHate: 1.5, PreventingLikes: 1.2, AllowingLikes: -0.5, AvoidingHate: -0.5 },
+            emotion: '98% Resentment',
+            analysis: 'Tend to actively oppose preferences while suppressing positive experiences'
         },
-            6: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-            7: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-            8: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            },
-			9: {
-                A: { CausingHate: 3, PreventingLikes: 2 },
-                B: { CausingHate: 2, PreventingLikes: 1 },
-                C: { AvoidingHate: 3, AllowingLikes: 1 },
-                D: { PreventingHate: 1, ParticipatingLikes: 1 },
-                E: { PreventingHate: 2, ParticipatingLikes: 2 },
-                F: { NeutralBehavior: 2 }
-            }
-
-        };
-
-        function updateProgress(currentQuestion) {
-            const progress = (currentQuestion / MAX_QUESTIONS) * 100;
-            document.getElementById('progress').style.width = `${progress}%`;
+        'The Hater Adversary': {
+            weights: { CausingHate: 1.4, AllowingLikes: 1.0, AvoidingHate: 0.7, PreventingLikes: 0.8 },
+            emotion: '82% Frustration',
+            analysis: 'Display passive-aggressive resistance to others\' choices'
+        },
+        'The Toxic Influencer': {
+            weights: { CausingHate: 1.3, PreventingLikes: 0.2, ParticipatingLikes: 1.3, AllowingLikes: 1.2, AvoidingHate: -0.2 },
+            emotion: '65% Contradiction',
+            analysis: 'Engage while subtly undermining positive experiences'
+        },
+        'The Jealous Obstacle': {
+            weights: { AvoidingHate: 1.4, PreventingLikes: 1.4, AllowingLikes: 0.4, ParticipatingLikes: -0.2 },
+            emotion: '55% Envy',
+            analysis: 'Quietly resist others\' success while maintaining neutrality'
+        },
+        'The Passive Stranger': {
+            weights: { AvoidingHate: 1.5, AllowingLikes: 1.5, PreventingLikes: 0.2, ParticipatingLikes: -0.1 },
+            emotion: '40% Detachment',
+            analysis: 'Maintain strict neutrality and avoid engagement'
+        },
+        'The Ideal Collaborator': {
+            weights: { AvoidingHate: 1.2, ParticipatingLikes: 1.3, AllowingLikes: 1.0, PreventingLikes: -0.2 },
+            emotion: '35% Cooperation',
+            analysis: 'Selectively engage while avoiding deep commitment'
+        },
+        'The Supportive Ally': {
+            weights: { PreventingHate: 1.5, PreventingLikes: 0.3, AllowingLikes: 0.5, AvoidingHate: 1.3, ParticipatingLikes:  -0.2 },
+            emotion: '65% Empathy',
+            analysis: 'Actively support others while maintaining boundaries'
+        },
+        'The Protective Guardian': {
+            weights: { PreventingHate: 1.2, AllowingLikes: 1.4, AvoidingHate: 1.4, ParticipatingLikes: 0.6, PreventingLikes: -0.3 },
+            emotion: '82% Responsibility',
+            analysis: 'Vigorously defend preferences while encouraging participation'
+        },
+        'The Advocate Champion': {
+            weights: { PreventingHate: 1.5, ParticipatingLikes: 1.5, AllowingLikes: 0.3, AvoidingHate: 0.9, PreventingLikes: -0.6 },
+            emotion: '95% Passion',
+            analysis: 'Actively promote and participate in positive experiences'
         }
-		
-		
+    },
+    emotionalSpectrum: {
+        Sadness: ['The Malicious Antagonist', 'The Hater Adversary', 'The Toxic Influencer'],
+        Neutral: ['The Jealous Obstacle', 'The Passive Stranger', 'The Ideal Collaborator'],
+        Happiness: ['The Supportive Ally', 'The Protective Guardian', 'The Advocate Champion']
+    }
+};
 
-        function nextQuestion(answer, questionNum) {
-            const impacts = answerImpacts[questionNum][answer];
-            for (const [category, value] of Object.entries(impacts)) {
-                scores[category] += value;
-            }
+// Adjusted Answer Matrix based on new logic (unchanged from previous version)
+const answerImpacts = {
+    1: {
+        A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    2: {
+         A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    3: {
+      A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    4: {
+       A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    5: {
+       A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    6: {
+    A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    7: {
+      A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    8: {
+     A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    },
+    9: {
+       A: { CausingHate: 2, PreventingLikes: 1 },
+        B: { AvoidingHate: 2, PreventingLikes: 1 },
+        C: { AllowingLikes: 2, AvoidingHate: 2 },
+        D: { AllowingLikes: 2, PreventingHate: 1 },
+        E: { ParticipatingLikes: 2, AvoidingHate: 2 },
+        F: { ParticipatingLikes: 2, PreventingHate: 1 }
+    }
+};
 
-            // Hide the current question
-            document.getElementById(`q${questionNum}`).classList.remove('active');
-            document.getElementById(`q${questionNum}`).style.display = 'none';
+function updateProgress(currentQuestion) {
+    const progress = (currentQuestion / MAX_QUESTIONS) * 100;
+    document.getElementById('progress').style.width = `${progress}%`;
+}
 
-            // Move to the next question or show results
-            if(questionNum < MAX_QUESTIONS) {
-                // Show the next question
-                const nextQuestionNum = questionNum + 1;
-                document.getElementById(`q${nextQuestionNum}`).classList.add('active');
-                document.getElementById(`q${nextQuestionNum}`).style.display = 'block';
-                updateProgress(nextQuestionNum);
-            } else {
-                // Show the results if it's the last question
-                showResults();
-            }
-        }
+function nextQuestion(answer, questionNum) {
+    const impacts = answerImpacts[questionNum][answer];
+    for (const [category, value] of Object.entries(impacts)) {
+        scores[category] += value;
+    }
 
-        function showResults() {
-    const totalScore = Object.values(scores).reduce((sum, score) => sum + score, 0);
-    const normalizedScores = {};
+    document.getElementById(`q${questionNum}`).classList.remove('active');
+    
+    if(questionNum < MAX_QUESTIONS) {
+        const nextQuestionNum = questionNum + 1;
+        document.getElementById(`q${nextQuestionNum}`).classList.add('active');
+        updateProgress(nextQuestionNum);
+    } else {
+        showResults();
+    }
+}
+
+function allSameChoice(choice) {
+    return Object.values(scores).every(score => score === (choice === 'A' ? 18 : choice === 'B' ? 18 : choice === 'C' ? 36 : choice === 'D' ? 18 : choice === 'E' ? 36 : choice === 'F' ? 18 : 0));
+}
+
+function calculateRole() {
+    if (allSameChoice('A')) return [['The Malicious Antagonist', 100], ['The Hater Adversary', 0], ['The Toxic Influencer', 0]];
+    if (allSameChoice('C')) return [['The Passive Stranger', 100], ['The Jealous Obstacle', 0], ['The Ideal Collaborator', 0]];
+    if (allSameChoice('D')) return [['The Supportive Ally', 100], ['The Protective Guardian', 0], ['The Advocate Champion', 0]];
+    if (allSameChoice('E')) return [['The Protective Guardian', 100], ['The Supportive Ally', 0], ['The Advocate Champion', 0]];
+    if (allSameChoice('F')) return [['The Advocate Champion', 100], ['The Protective Guardian', 0], ['The Supportive Ally', 0]];
+    
+    // If no single choice pattern matches, use the existing weighted calculation
+    const totalWeight = Object.values(scores).reduce((a, b) => a + b, 0);
+    const normalized = {};
+    
+    // Normalize scores
     for (const [category, score] of Object.entries(scores)) {
-        normalizedScores[category] = (score / totalScore) * 100;
+        normalized[category] = totalWeight > 0 ? (score / totalWeight) * 100 : 0;
     }
 
-    // Determine the dominant behavior for hate and like
-    const dominantHate = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
-    const dominantLike = Object.keys(scores).filter(key => key !== dominantHate).reduce((a, b) => scores[a] > scores[b] ? a : b);
-
-    // Mapping to the 9 roles from the image
-    let role, emotion;
-    switch(dominantHate) {
-        case 'CausingHate':
-            switch(dominantLike) {
-                case 'PreventingLikes':
-                    role = 'The Malicious Antagonist';
-                    emotion = '99% Sadness';
-                    break;
-                case 'AllowingLikes':
-                    role = 'The Hater Adversary';
-                    emotion = '75% Sadness';
-                    break;
-                case 'ParticipatingLikes':
-                    role = 'The Toxic Influencer';
-                    emotion = '50% Sadness';
-                    break;
-                default:
-                    role = 'The Manipulative Opportunist';
-                    emotion = '75% Indifference';
-            }
-            break;
-        case 'AvoidingHate':
-            switch(dominantLike) {
-                case 'PreventingLikes':
-                    role = 'The Jealous Obstacle';
-                    emotion = '45% Sadness';
-                    break;
-                case 'AllowingLikes':
-                    role = 'The Passive Stranger';
-                    emotion = 'N/A';
-                    break;
-                case 'ParticipatingLikes':
-                    role = 'The Ideal Collaborator';
-                    emotion = '25% Happiness';
-                    break;
-                default:
-                    role = 'The Neutral Bystander';
-                    emotion = '50% Neutral';
-            }
-            break;
-        case 'PreventingHate':
-            switch(dominantLike) {
-                case 'PreventingLikes':
-                    role = 'The Supportive Ally';
-                    emotion = '50% Happiness';
-                    break;
-                case 'AllowingLikes':
-                    role = 'The Protective Guardian';
-                    emotion = '75% Happiness';
-                    break;
-                case 'ParticipatingLikes':
-                    role = 'The Advocate Champion';
-                    emotion = '99% Happiness';
-                    break;
-                default:
-                    role = 'The Balanced Mediator';
-                    emotion = '50% Neutral';
-            }
-            break;
-        default:
-            role = 'Balanced Individual';
-            emotion = '50% Neutral';
+    // Calculate role probabilities
+    const roleScores = {};
+    for (const [role, config] of Object.entries(roleSystem.roles)) {
+        let score = 0;
+        for (const [category, weight] of Object.entries(config.weights)) {
+            score += normalized[category] * weight;
+        }
+        roleScores[role] = score;
     }
+
+    // Get top 3 roles
+    return Object.entries(roleScores)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 3);
+}
+
+
+function showResults() {
+    const [primaryRole, secondaryRole, tertiaryRole] = calculateRole();
+    const emotionSpectrum = Object.entries(roleSystem.emotionalSpectrum).find(
+        ([, roles]) => roles.includes(primaryRole[0])
+    )[0];
 
     document.getElementById('result').style.display = 'block';
-    document.getElementById('roleTitle').textContent = role;
-    document.getElementById('emotionScore').textContent = `Emotional Alignment: ${emotion}`;
-    
-    let emotionalAnalysis = '';
-    // Simplified emotional and psychological analysis for the 9 roles
-    switch(role) {
-        case 'The Malicious Antagonist':
-            emotionalAnalysis = 'You might struggle with feelings of resentment and a need for control, often leading to defensive behaviors.';
-            break;
-        case 'The Hater Adversary':
-            emotionalAnalysis = 'Your emotional state might be characterized by frustration and competitiveness.';
-            break;
-        case 'The Toxic Influencer':
-            emotionalAnalysis = 'You exhibit signs of seeking validation through negative influence, leading to dissatisfaction.';
-            break;
-        case 'The Jealous Obstacle':
-            emotionalAnalysis = 'Feelings of envy or insecurity might dominate your emotional landscape.';
-            break;
-        case 'The Passive Stranger':
-            emotionalAnalysis = 'Emotionally, you might feel detached or indifferent, preferring to avoid confrontation.';
-            break;
-        case 'The Ideal Collaborator':
-            emotionalAnalysis = 'You are likely to experience joy and fulfillment from collaborative efforts.';
-            break;
-        case 'The Supportive Ally':
-            emotionalAnalysis = 'Your emotional state is one of contentment and supportiveness.';
-            break;
-        case 'The Protective Guardian':
-            emotionalAnalysis = 'You might feel a deep sense of responsibility and care.';
-            break;
-        case 'The Advocate Champion':
-            emotionalAnalysis = 'Emotionally, you\'re driven by passion and a desire for positive change.';
-            break;
-        default:
-            emotionalAnalysis = 'Your balanced approach suggests emotional stability and psychological resilience.';
-    }
+    document.getElementById('roleTitle').textContent = primaryRole[0];
+    document.getElementById('emotionScore').textContent = `
+        Emotional Spectrum: ${emotionSpectrum} (${roleSystem.roles[primaryRole[0]].emotion})
+    `;
 
     document.getElementById('scoreBreakdown').innerHTML = `
-        <h4>Detailed Behavioral Analysis</h4>
-        <p>Dominant Hate Behavior: ${dominantHate}</p>
-        <p>Dominant Like Behavior: ${dominantLike}</p>
+        <div class="role-probability">
+            <h4>Role Probability:</h4>
+            <p>🥇 ${primaryRole[0]} (${Math.round(primaryRole[1])}%)</p>
+            <p>🥈 ${secondaryRole[0]} (${Math.round(secondaryRole[1])}%)</p>
+            <p>🥉 ${tertiaryRole[0]} (${Math.round(tertiaryRole[1])}%)</p>
+        </div>
+        <div class="behavior-analysis">
+            <h4>Behavior Pattern:</h4>
+            <p>${roleSystem.roles[primaryRole[0]].analysis}</p>
+        </div>
         <div class="score-grid">
-            ${Object.entries(normalizedScores).map(([category, score]) => `
+            ${Object.entries(scores).map(([category, score]) => `
                 <div class="score-item">
-                    <span>${category}:</span>
-                    <progress value="${score}" max="100"></progress>
-                    ${Math.round(score)}%
+                    <span>${category.replace(/([A-Z])/g, ' $1').trim()}:</span>
+                    <progress value="${score}" max="${MAX_QUESTIONS * 3}"></progress>
+                    ${score}
                 </div>
             `).join('')}
         </div>
-        <h4>Emotional and Psychological Analysis</h4>
-        <p>${emotionalAnalysis}</p>
     `;
 }
-    </script>
+</script>
+
+   
 </body>
 </html>
